@@ -1,0 +1,42 @@
+//Which Account owns the most Address Books?
+
+SELECT
+    firstName, COUNT(*)
+FROM
+    Entry
+GROUP BY
+    firstName
+HAVING 
+    COUNT(*) > 10;
+    
+    OR (better)
+    
+SELECT  addressBookId , firstName,
+        COUNT(addressBookId) AS value_occurrence 
+FROM     Entry
+GROUP BY firstName
+ORDER BY value_occurrence DESC
+LIMIT    1;
+    
++---------------+-----------+------------------+
+| addressBookId | firstName | value_occurrence |
++---------------+-----------+------------------+
+|            28 | Maggy     |               11 |
++---------------+-----------+------------------+
+    
+//Which Address Book contains the most Entries?
+
+
+
+SELECT       accountId , name,
+             COUNT(accountId) AS value_occurrence 
+    FROM     AddressBook
+    GROUP BY name
+    ORDER BY value_occurrence DESC
+    LIMIT    1;
+    
++-----------+----------------+------------------+
+| accountId | name           | value_occurrence |
++-----------+----------------+------------------+
+|         1 | Vel Foundation |                3 |
++-----------+----------------+------------------+
