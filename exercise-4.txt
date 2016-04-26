@@ -1,0 +1,11 @@
+//Modify the decodemtl_addressbook.Account row
+
+UPDATE Account SET password="44456";
+
+//Modify the decodemtl_addressbook.AddressBook row
+
+UPDATE AddressBook SET name="Bernard";
+
+//Modify the three decodemtl_addressbook.Entry rows using one query only
+
+UPDATE Entry SET firstName="Franck";
