@@ -2,6 +2,9 @@
 
 SELECT id, email, password, createdOn, modifiedOn FROM Account;
 
+or
+
+SELECT * FROM Account;
 +----+--------------------+----------+---------------------+---------------------+
 | id | email              | password | createdOn           | modifiedOn          |
 +----+--------------------+----------+---------------------+---------------------+
@@ -12,6 +15,9 @@ SELECT id, email, password, createdOn, modifiedOn FROM Account;
 
 SELECT id, accountId, name, createdOn, modifiedOn FROM AddressBook;
 
+or
+
+SELECT * FROM AddressBook;
 +----+-----------+----------+---------------------+---------------------+
 | id | accountId | name     | createdOn           | modifiedOn          |
 +----+-----------+----------+---------------------+---------------------+
@@ -21,6 +27,10 @@ SELECT id, accountId, name, createdOn, modifiedOn FROM AddressBook;
 //Retrieve data from the previously inserted decodemtl_addressbook.Entry rows
 
 SELECT id, addressBookId, firstName, lastName, birthday, type, subtype, contentLineOne, contentLineTwo, contentLineThree, contentLineFour, contentLineFive FROM Entry;
+
+or
+
+SELECT * FROM Entry;
 
 +----+---------------+-----------+----------+---------------------+------+---------+----------------+----------------------+------------------+-----------------+-----------------+
 | id | addressBookId | firstName | lastName | birthday            | type | subtype | contentLineOne | contentLineTwo       | contentLineThree | contentLineFour | contentLineFive |
