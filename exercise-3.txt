@@ -1,0 +1,31 @@
+//Retrieve data from the previously inserted decodemtl_addressbook.Account row
+
+SELECT id, email, password, createdOn, modifiedOn FROM Account;
+
++----+--------------------+----------+---------------------+---------------------+
+| id | email              | password | createdOn           | modifiedOn          |
++----+--------------------+----------+---------------------+---------------------+
+|  1 | augustin@gmail.com | 123456   | 2016-05-16 21:10:10 | 2016-05-21 20:00:00 |
++----+--------------------+----------+---------------------+--------------------
+
+//Retrieve data from the previously inserted decodemtl_addressbook.AddressBook row
+
+SELECT id, accountId, name, createdOn, modifiedOn FROM AddressBook;
+
++----+-----------+----------+---------------------+---------------------+
+| id | accountId | name     | createdOn           | modifiedOn          |
++----+-----------+----------+---------------------+---------------------+
+|  1 |         1 | augustin | 2015-05-20 12:15:52 | 2015-08-20 20:22:20 |
++----+-----------+----------+---------------------+---------------------+
+
+//Retrieve data from the previously inserted decodemtl_addressbook.Entry rows
+
+SELECT id, addressBookId, firstName, lastName, birthday, type, subtype, contentLineOne, contentLineTwo, contentLineThree, contentLineFour, contentLineFive FROM Entry;
+
++----+---------------+-----------+----------+---------------------+------+---------+----------------+----------------------+------------------+-----------------+-----------------+
+| id | addressBookId | firstName | lastName | birthday            | type | subtype | contentLineOne | contentLineTwo       | contentLineThree | contentLineFour | contentLineFive |
++----+---------------+-----------+----------+---------------------+------+---------+----------------+----------------------+------------------+-----------------+-----------------+
+|  1 |             1 | Augustin  | Delporte | 1986-01-08 12:15:00 | home | phone   | This is a line | This is another line | Again            | And again       | And again       |
+|  2 |             2 | Andre     | Ferrand  | 1986-01-08 12:15:00 | home | phone   | This is a line | This is another line | Again            | And again       | And again       |
+|  3 |             3 | Anne      | Bertrand | 1980-05-12 12:45:12 | home | phone   | This is a line | This is another line | Again            | And again       | And again       |
++----+---------------+-----------+----------+---------------------+------+---------+----------------+----------------------+------------------+-----------------
