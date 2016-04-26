@@ -1,0 +1,14 @@
+//Account
+DESCRIBE Account;
+
+INSERT INTO Account (email, password, createdOn, modifiedOn) VALUES ("augustin@gmail.com", "123456", "2016-05-16 21:10:10", "2016-05-21 20:00:00");  
+
+//AddressBook
+DESCRIBE AddressBook;
+
+INSERT INTO AddressBook (accountId, name, createdOn, modifiedOn) VALUES (1, "augustin", "2015-05-20 12:15:52", "2015-08-20 20:22:20");
+
+//Entry
+DESCRIBE Entry;
+
+INSERT INTO Entry (addressBookId, firstName, lastName, birthday, type, subtype, contentLineOne, contentLineTwo, contentLineThree, contentLineFour, contentLineFive) VALUES (1, "Augustin", "Delporte", "1986-01-08 12:15:00", "home", "phone", "This is a line", "This is another line", "Again", "And again", "And again");
