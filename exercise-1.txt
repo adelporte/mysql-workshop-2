@@ -1,0 +1,7 @@
+CREATE DATABASE decodemtl_addressbook;
+
+USE decodemtl_addressbook;
+
+SOURCE data/import-table-structure.sql;
+
+It creates a new database name_import;
